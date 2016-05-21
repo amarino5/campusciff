@@ -62,3 +62,9 @@ git commit -m "Final de la practica 1"
 
 ##Autor
 ![Autor](https://avatars0.githubusercontent.com/u/7388117?v=3&s=460)
+git branch v0.2
+git checkout v0.2
+#Practica 2
+##Crear una rama v0.2
+##Aañadir el fichero 2.txt en la v0.2
+touch 2.txt
