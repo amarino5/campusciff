@@ -94,12 +94,16 @@ git commit -m "Añadir hola en el fichero 1.txt"
 
 ###Posicionarse en la rama v0.2, añadir "Adios" en el fichero 1.txt y hacer commit
 git checkout v0.2
+
 echo "Adios" >> 1.txt
+
 git add -A
+
 git commit -m "Añadido Adios al fichero 1.txt"
 
 ###Posicionarse de nuevo en la rama master y hacer un merge con la rama v0.2
 git checkout master
+
 git merge master v0.2
 
 ##Listado de ramas
@@ -112,6 +116,37 @@ sboxes@osboxes:~/PycharmProjects/campusciff$ git branch -v
 ~~~
 
 ##Arreglar conflicto
+git add -A
+
+git commit -m "Arreglado conflicto en fichero 1.txt" 1.txt
+
+##Borrar rama
+###Crear tag v0.2
+git tag -a v0.2 -m "Añadir Adios en fichero 1.txt" b2f06b6
+###Borrar rama v0.2
+git branch -d v0.2
+
+##Listado de cambios
+~~~shell
+osboxes@osboxes:~/PycharmProjects/campusciff$ git list
+* b2f06b6 (tag: v0.2) Añadir ADIOS  en el fichero 1.txt
+| * b61bd63 (HEAD -> master) Añadir hola en el fichero 1.txt
+| *   148e716 Añadir hola en el fichero 1.txt
+| |\  
+| |/  
+|/|   
+* | eaf7c9a nuevos comentarios en el README.md de las tareas realizadas en la rama v0.2
+* | 132e042 (origin/v0.2) añadir fichero 2.txt en la rama v0.2
+| * 648647f Commiteo de las ultimas acciones de cambio de rama
+|/  
+* 7a2b201 (origin/master, origin/HEAD) comiteo final de la practica 1
+* 7cd0187 comiteo final de la practica 1
+* 06927da (tag: v0.1, tag: list) Añadir los .gitignore, fichero y directorio privados, y 1.txt
+* 4c9b47e commit inicial
+* 2f2928a initial version
+* 410abda Initial commit
+~~~
+
 
 
 
