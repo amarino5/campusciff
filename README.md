@@ -78,6 +78,21 @@ git add -A
 git commit -m 'añadir fichero 2.txt en la rama v0.2'
 ##Crear una rama remota
 git push origin v0.2
-##posicionarse en la rama master
+
+##Merge directo 
+###Posicionarse en la rama master
 git checkout master
+
+###Hacer un merge de la rama v0.2 con la rama master
+git merge origin v0.2
+
+##Merge con conflicto
+###En la rama master añadir Hola en el fichero 1.txt
+echo "Hola" >> 1.txt
+git add -A
+git commit -m "Añadir hola en el fichero 1.txt"
+
+###Posicionarse en la rama v0.2, añadir "Hola" en el fichero 1.txt y hacer commit
+git checkout v0.2
+
 
