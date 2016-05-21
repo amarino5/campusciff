@@ -62,3 +62,5 @@ git commit -m "Final de la practica 1"
 
 ##Autor
 ![Autor](https://avatars0.githubusercontent.com/u/7388117?v=3&s=460)
+##posicionarse en la rama master
+git checkout master
