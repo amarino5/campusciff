@@ -68,3 +68,7 @@ git checkout v0.2
 ##Crear una rama v0.2
 ##Aañadir el fichero 2.txt en la v0.2
 touch 2.txt
+git add -A
+git commit -m 'añadir fichero 2.txt en la rama v0.2'
+##Crear una rama remota
+git push origin v0.2
