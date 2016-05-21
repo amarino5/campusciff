@@ -92,7 +92,26 @@ echo "Hola" >> 1.txt
 git add -A
 git commit -m "Añadir hola en el fichero 1.txt"
 
-###Posicionarse en la rama v0.2, añadir "Hola" en el fichero 1.txt y hacer commit
+###Posicionarse en la rama v0.2, añadir "Adios" en el fichero 1.txt y hacer commit
 git checkout v0.2
+echo "Adios" >> 1.txt
+git add -A
+git commit -m "Añadido Adios al fichero 1.txt"
+
+###Posicionarse de nuevo en la rama master y hacer un merge con la rama v0.2
+git checkout master
+git merge master v0.2
+
+##Listado de ramas
+git branch -v 
+
+~~~javascript
+sboxes@osboxes:~/PycharmProjects/campusciff$ git branch -v
+* master b61bd63 [ahead 5] Añadir hola en el fichero 1.txt
+  v0.2   b2f06b6 Añadir ADIOS  en el fichero 1.txt
+~~~
+
+##Arreglar conflicto
+
 
 
