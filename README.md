@@ -161,3 +161,7 @@ Se ha creado una pull request al repositorio de Araceli
 ~~~ javascript 
 amarino5 wants to merge 1 commit into campusciff-araceliMacia:master from campusciff-amarino5:b-añadir-nombre-amarin
 ~~~
+Se ha añadido un pull request a un repositorio de Jorge Maza
+~~~ javascript
+amarino5  wants to merge 1 commit into jorgemaza:master from campusciff-amarino5:rama-pull-request
+~~~
