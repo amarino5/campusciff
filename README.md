@@ -150,3 +150,14 @@ osboxes@osboxes:~/PycharmProjects/campusciff$ git list
 
 
 
+##Crear una organizacion
+Se ha creado la organizacion campusciff-amarino5
+##Crear permisos y roles en la organizacion
+Se han creado los roles de administradores y desarrolladores y se han asignado a compañeros del master
+##Crear un index de la organizacion
+Se ha creado el siguiente index -<http://campusciff-amarino5.github.io/campusciff.github.io/>
+##Crear pull request
+Se ha creado una pull request al repositorio de Araceli 
+~~~ javascript 
+amarino5 wants to merge 1 commit into campusciff-araceliMacia:master from campusciff-amarino5:b-añadir-nombre-amarin
+~~~
